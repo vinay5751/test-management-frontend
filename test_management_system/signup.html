@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <h1>Test Manager</h1>
+        </div>
+        <div id="navigation-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <section id="login">
+        <div class="sign-up">
+
+            <select name="account" id="account" onchange="ShowHideDiv()">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+            </select>
+
+
+            <div id="student" class="form-div">
+                <h2>Student Form</h2>
+                <form>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="first-name" id="first-name">
+                    <label for="middle-name">Middle Name:</label>
+                    <input type="text" name="middle-name" id="middle-name">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="last-name" id="last-name">
+                    <label for="standard">Enter Standard:</label>
+                    <input type="number" name="standard" id="standard" min="6" max="12">
+                    <label for="email">Enter email:</label>
+                    <input type="email" name="email" id="email">
+                    <label for="password">Enter password:</label>
+                    <input type="password" name="password" id="password">
+                    <input type="button" value="Sign Up" class="btn">
+                </form>
+            </div>
+            <div id="teacher" class="form-div">
+                <h2>Teacher Form</h2>
+                <form>
+                    <label for="first-name-teacher">First Name:</label>
+                    <input type="text" name="first-name-teacher" id="first-name-teacher">
+                    <label for="middle-name-teacher">Middle Name:</label>
+                    <input type="text" name="middle-name-teacher" id="middle-name-teacher">
+                    <label for="last-name-teacher">Last Name:</label>
+                    <input type="text" name="last-name-teacher" id="last-name-teacher">
+                    <label for="subject">Enter Subject:</label>
+                    <input type="text" name="subject" id="subject">
+                    <label for="email-teacher">Enter email:</label>
+                    <input type="email" name="email-teacher" id="email-teacher">
+                    <label for="password-teacher">Enter password:</label>
+                    <input type="password" name="password-teacher" id="password-teacher">
+                    <input type="button" value="Sign Up" class="btn">
+                </form>
+            </div>
+        </div>
+
+
+
+    </section>
+    <footer id="footer">
+        ©All Rights Reserved
+    </footer>
+</body>
+
+</html>
